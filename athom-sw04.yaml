@@ -64,7 +64,17 @@ binary_sensor:
           - ON for at least 4s
         then:
           - button.press: Reset
-
+    on_press:
+      then:
+      - logger.log: "pressed"
+    on_release:
+      then:
+      - logger.log: "released"
+    on_double_click:
+      min_length: 10ms
+      max_length: 450ms
+      then:
+      - logger.log: "double clicked"
   - platform: gpio
     pin:
       inverted: true
@@ -75,6 +85,17 @@ binary_sensor:
       max_length: 0.5s
       then:
         - light.toggle: light2
+    on_press:
+      then:
+      - logger.log: "pressed"
+    on_release:
+      then:
+      - logger.log: "released"
+    on_double_click:
+      min_length: 10ms
+      max_length: 450ms
+      then:
+      - logger.log: "double clicked"
   - platform: gpio
     pin:
       inverted: true
@@ -85,7 +106,18 @@ binary_sensor:
       max_length: 0.5s
       then:
         - light.toggle: light3
-  - platform: gpio
+    on_press:
+      then:
+      - logger.log: "pressed"
+    on_release:
+      then:
+      - logger.log: "released"
+    on_double_click:
+      min_length: 10ms
+      max_length: 450ms
+      then:
+      - logger.log: "double clicked"
+    - platform: gpio
     pin:
       inverted: true
       number: GPIO16
@@ -95,7 +127,17 @@ binary_sensor:
       max_length: 0.5s
       then:
         - light.toggle: light4
-
+    on_press:
+      then:
+      - logger.log: "pressed"
+    on_release:
+      then:
+      - logger.log: "released"
+    on_double_click:
+      min_length: 10ms
+      max_length: 450ms
+      then:
+      - logger.log: "double clicked"
 sensor:
   - platform: uptime
     name: "${friendly_name} Uptime"
