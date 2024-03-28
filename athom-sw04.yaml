@@ -15,7 +15,7 @@ dashboard_import:
 
 binary_sensor:
   # Touch Buttons
-    - platform: gpio
+  - platform: gpio
     pin:
       inverted: true
       number: GPIO16
