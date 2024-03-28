@@ -4,12 +4,14 @@ substitutions:
   project_name: "athom.sw04"
   project_version: "1.1"
   light4_restore_mode: RESTORE_DEFAULT_OFF
+  package_sw03: github://athom-tech/athom-configs/athom-sw03.yaml
+  package_dashboard: github://athom-tech/athom-configs/athom-sw04.yaml
 
 packages:
-  athom.sw03: github://leonardospina/athom-configs/athom-sw03.yaml
+  athom.sw03: ${package_sw03}
 
 dashboard_import:
-  package_import_url: github://athom-tech/athom-configs/athom-sw04.yaml
+  package_import_url: ${package_dashboard}
 
 binary_sensor:
   # Touch Buttons

@@ -4,6 +4,8 @@ substitutions:
   project_name: "athom.sw01"
   project_version: "1.1"
   light_restore_mode: RESTORE_DEFAULT_OFF
+  ssid: ""
+  password: ""
 
 esphome:
   name: "${name}"
@@ -33,6 +35,8 @@ web_server:
   port: 80
 
 wifi:
+  ssid: ${wifi_ssid}
+  password: ${wifi_password}
   ap: {} # This spawns an AP with the device name and mac address with no password.
 
 captive_portal:
