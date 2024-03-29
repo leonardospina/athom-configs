@@ -12,9 +12,6 @@ substitutions:
 packages:
   athom.sw01: ${package_sw01}
 
-dashboard_import:
-  package_import_url: ${package_dashboard}
-
 binary_sensor:
   - platform: gpio
     pin:

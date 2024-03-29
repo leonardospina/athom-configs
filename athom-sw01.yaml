@@ -7,6 +7,7 @@ substitutions:
   ssid: ""
   password: ""
   add_mac_suffix: true
+  package_import_url: github://athom-tech/athom-configs/athom-sw01.yaml
 
 esphome:
   name: "${name}"
@@ -43,7 +44,7 @@ wifi:
 captive_portal:
 
 dashboard_import:
-  package_import_url: github://athom-tech/athom-configs/athom-sw01.yaml
+  package_import_url: ${package_dashboard}
 
 binary_sensor:
   - platform: status

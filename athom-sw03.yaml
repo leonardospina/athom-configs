@@ -13,9 +13,6 @@ substitutions:
 packages:
   athom.sw02: ${package_sw02}
 
-dashboard_import:
-  package_import_url: ${package_dashboard}
-
 binary_sensor:
   - platform: status
     name: "${friendly_name} Status"
