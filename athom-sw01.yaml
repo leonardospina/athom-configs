@@ -10,7 +10,7 @@ substitutions:
 
 esphome:
   name: "${name}"
-  name_add_mac_suffix: ${add_mac_suffix}
+  name_add_mac_suffix: false # ${add_mac_suffix}
   project:
     name: "${project_name}"
     version: "${project_version}"
