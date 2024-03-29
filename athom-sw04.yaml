@@ -7,12 +7,15 @@ substitutions:
   light2_restore_mode: RESTORE_DEFAULT_OFF
   light3_restore_mode: RESTORE_DEFAULT_OFF
   light4_restore_mode: RESTORE_DEFAULT_OFF
-  package_sw03: github://athom-tech/athom-configs/athom-sw03.yaml
+  repo: "github://athom-tech/athom-configs"
   package_dashboard: github://athom-tech/athom-configs/athom-sw04.yaml
   add_mac_suffix: true
 
-packages:
-  athom.sw03: ${package_sw03}
+remote_package:
+  url: ${repo}
+  ref: "main" # optional
+  files: ["athom-sw03.yaml"]
+  refresh: "1d" # optional
 
 binary_sensor:
   # Touch Buttons

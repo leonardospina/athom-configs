@@ -7,7 +7,7 @@ substitutions:
   ssid: ""
   password: ""
   add_mac_suffix: true
-  package_import_url: github://athom-tech/athom-configs/athom-sw01.yaml
+  package_dashboard: github://athom-tech/athom-configs/athom-sw01.yaml
 
 esphome:
   name: "${name}"
