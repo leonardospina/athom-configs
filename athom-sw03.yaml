@@ -8,6 +8,7 @@ substitutions:
   light3_restore_mode: RESTORE_DEFAULT_OFF
   package_sw02: github://athom-tech/athom-configs/athom-sw02.yaml
   package_dashboard: github://athom-tech/athom-configs/athom-sw03.yaml
+  add_mac_suffix: true
 
 packages:
   athom.sw02: ${package_sw02}
