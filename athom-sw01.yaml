@@ -58,7 +58,7 @@ binary_sensor:
         input: true
         pullup: true
     name: "${friendly_name} Button"
-    disabled_by_default: true
+    disabled_by_default: false
     on_multi_click:
       - timing:
           - ON for at most 0.5s

@@ -29,7 +29,7 @@ binary_sensor:
         input: true
         pullup: true
     name: "${friendly_name} Button 3"
-    disabled_by_default: true
+    disabled_by_default: false
     on_click:
       max_length: 0.5s
       then:

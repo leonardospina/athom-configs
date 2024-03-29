@@ -24,7 +24,7 @@ binary_sensor:
         input: true
         pullup: true
     name: "${friendly_name} Button 2"
-    disabled_by_default: true
+    disabled_by_default: false
     on_click:
       max_length: 0.5s
       then:
@@ -50,9 +50,9 @@ light:
     output: relay2
     restore_mode: ${light2_restore_mode}
     on_turn_on:
-      - light.turn_on: light4
+      - light.turn_on: light2
     on_turn_off:
-      - light.turn_off: light4
+      - light.turn_off: light2
 
   # Button LEDs
   - platform: monochromatic

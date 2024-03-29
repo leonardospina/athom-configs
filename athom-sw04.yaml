@@ -24,7 +24,7 @@ binary_sensor:
       inverted: true
       number: GPIO16
     name: "${friendly_name} Button 4"
-    disabled_by_default: true
+    disabled_by_default: false
     on_click:
       max_length: 0.5s
       then:
