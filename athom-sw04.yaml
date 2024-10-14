@@ -109,7 +109,7 @@ captive_portal:
 
 dashboard_import:
   #package_import_url: github://athom-tech/athom-configs/athom-sw04.yaml
-  package_import_url: github://leonardospina/athom-configs/blob/207a0ac8240f1d4773c15822b2701fed97634a5d/athom-sw04.yaml
+  package_import_url: github://leonardospina/athom-configs/athom-sw04.yaml
 
 globals:
   - id: restore_mode
