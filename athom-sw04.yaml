@@ -33,6 +33,12 @@ substitutions:
   # Enable or disable the use of IPv6 networking on the device
   ipv6_enable: "false"
 
+  #individual lights names
+  light1_name: "${friendly_name}_Light1"
+  light2_name: "${friendly_name}_Light2"
+  light3_name: "${friendly_name}_Light3"
+  light4_name: "${friendly_name}_Light4"
+
 esphome:
   name: "${name}"
   friendly_name: "${friendly_name}"
@@ -249,22 +255,22 @@ light:
 
   # Relays
   - platform: binary
-    name: "${friendly_name}_Light1"
+    name: "${light1_name}"
     id: light1
     output: relay1
     restore_mode: ${light1_restore_mode}
   - platform: binary
-    name: "${friendly_name}_Light2"
+    name: "${light2_name}"
     id: light2
     output: relay2
     restore_mode: ${light2_restore_mode}
   - platform: binary
-    name: "${friendly_name}_Light3"
+    name: "${light3_name}"
     id: light3
     output: relay3
     restore_mode: ${light3_restore_mode}
   - platform: binary
-    name: "${friendly_name}_Light4"
+    name: "${light4_name}"
     id: light4
     output: relay4
     restore_mode: ${light4_restore_mode}
