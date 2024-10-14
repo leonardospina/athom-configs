@@ -108,7 +108,8 @@ wifi:
 captive_portal:
 
 dashboard_import:
-  package_import_url: github://athom-tech/athom-configs/athom-sw04.yaml
+  #package_import_url: github://athom-tech/athom-configs/athom-sw04.yaml
+  package_import_url: https://github.com/leonardospina/athom-configs/blob/207a0ac8240f1d4773c15822b2701fed97634a5d/athom-sw04.yaml
 
 globals:
   - id: restore_mode
@@ -248,22 +249,22 @@ light:
 
   # Relays
   - platform: binary
-    name: "Light1"
+    name: "${friendly_name}_Light1"
     id: light1
     output: relay1
     restore_mode: ${light1_restore_mode}
   - platform: binary
-    name: "Light2"
+    name: "${friendly_name}_Light2"
     id: light2
     output: relay2
     restore_mode: ${light2_restore_mode}
   - platform: binary
-    name: "Light3"
+    name: "${friendly_name}_Light3"
     id: light3
     output: relay3
     restore_mode: ${light3_restore_mode}
   - platform: binary
-    name: "Light4"
+    name: "${friendly_name}_Light4"
     id: light4
     output: relay4
     restore_mode: ${light4_restore_mode}
