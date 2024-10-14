@@ -2,7 +2,7 @@
   "chipFamily": "ESP8266",
   "ota": {
     "path": "athom-1gang-switch-esp8266/athom-1gang-switch-esp8266.ota.bin",
-    "md5": "62b2024b9eca51cd49e09a2114d2c348"
+    "md5": "a76a8e278fdd951dbabe1fedaaa95cc7"
   },
   "parts": [
     {
